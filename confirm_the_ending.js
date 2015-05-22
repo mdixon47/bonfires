@@ -12,7 +12,7 @@ function end(str, target) {
     var lastArrElementLength = lastArrElement.length;
     
     if ((lastArrElement.substr(lastArrElementLength - 1) === target) ||
-         lastArrElement === target) {
+        (lastArrElement === target)) {
         return true;
     } else {
         return false;
