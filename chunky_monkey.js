@@ -2,6 +2,7 @@ function chunk(arr, size) {
     var temp = [];
     var result = [];
     var index = 0;
+    var originalSize = size;
     
     if (arr.length % size === 0) {
         // we can divide the array evenly
@@ -20,10 +21,11 @@ function chunk(arr, size) {
             result.push(temp);
             temp = [];
             
-            index += size;
-            size += size;
+            index += originalSize;
+            size += originalSize;
         }
         
+        console.log(result);
         return result;
     } else {
         // there will be two sub-arrays, one of size 'size',
@@ -43,9 +45,11 @@ function chunk(arr, size) {
             size += remainder;
         }
         
+        
+        console.log(result);
         return result;
         
     }
 }
 
-chunk(['a', 'b', 'c', 'd'], 2);
+chunk([0,1,2,3,4,5], 2);
