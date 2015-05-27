@@ -7,8 +7,6 @@ function mutation(arr) {
         var haystack = arr[0].toLowerCase().split('').sort();
         var needle   = arr[1].toLowerCase().split('').sort();
         
-        var numFound = 0;
-        
         // needle can't be bigger than haystack
         if (needle.length > haystack.length) {
             return false;
