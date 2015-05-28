@@ -35,9 +35,9 @@ function translate(str) {
         return str + "way";
     } else if (startsWithConsonant) {
         if (tempChars.length > 1) {
-            return str.split('').join('').toString().substring(2) + tempChars + "ay";
+            return str.substring(2) + tempChars + "ay";
         } else {
-            return str.split('').splice(1).join('').toString() + tempChars + "ay";    
+            return str.substring(1) + tempChars + "ay";    
         } 
     }
 }
