@@ -9,8 +9,6 @@ function where(collection, source) {
         }
     });
     
-    console.log(arr);
-    
     return arr;
 }
 
