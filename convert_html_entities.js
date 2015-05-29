@@ -1,4 +1,6 @@
 function convert(str) {
+    // I should try to do this with regex and not... this...
+    
     var strArr = str.split('');
     
     for (i = 0; i < strArr.length; i++) {
