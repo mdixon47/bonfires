@@ -1,8 +1,6 @@
 function binaryAgent(str) {
     str = str.split(' ');
     
-    var decimal = 0;
-    
     for (i = 0; i < str.length; i++) {
         str[i] = String.fromCharCode(parseInt(str[i], 2));
     }
